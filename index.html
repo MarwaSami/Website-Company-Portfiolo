@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finsweet</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.css">
+</head>
+<style>
+    .Header {
+        background-color: #1C1E53;
+        height: 80vh;
+    }
+
+    .HeaderText h1 {
+        font-size: 54px;
+        color: white;
+    }
+
+    .HeaderText p {
+        color: white;
+        opacity: 0.7;
+    }
+
+    .HeaderImage img {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .cust-margin {
+        padding-top: 10vh;
+    }
+
+    .custbutt {
+        border-radius: 2rem;
+        background-color: #FCD980;
+        font-size: 18px;
+        width: 40%;
+        height: 8vh;
+    }
+
+    .custlink {
+        text-decoration: none;
+        color: white;
+        margin-right: -5px;
+    }
+
+    .SwBody {
+        height: 70vh;
+        padding-top: 12vh;
+    }
+
+    .BodyText h1 {
+        font-size: 48px;
+    }
+
+    .BodyText p {
+        color: #282938;
+        opacity: 0.7;
+    }
+
+    .BodyText .custlinkBody {
+        text-decoration: none;
+        color: #2405F2;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    .item h1 {
+        font-size: 32px;
+        color: #282938;
+    }
+
+    .item p {
+        color: #282938;
+        opacity: .7;
+    }
+
+    .Viewourprojects {
+        margin-top: 2vh;
+        height: 95vh;
+    }
+
+    .offcanvas {
+        position: absolute;
+        left: 7% !important;
+        top: 162vh !important;
+        height: 80vh !important;
+        background-image: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%) !important;
+        color: white !important;
+        padding-top: 35vh !important;
+        width: 24% !important;
+    }
+
+    .cont-frame-parent {
+        position: relative;
+    }
+
+    .cont-frame {
+        width: 100%;
+        background-image: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%) !important;
+        height: 42vh;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        padding-left: 20%;
+        padding-top: 25vh;
+        display: none;
+    }
+
+    .cont-frame h2 {
+        font-size: 24px;
+        width: 60%;
+        color: white;
+    }
+
+    .ourClient {
+        margin-top: 8vh;
+        padding-left: 5%;
+        height: 50vh;
+    }
+
+    .FAQ {
+        margin-top: 8vh;
+        padding-left: 5%;
+        height: 50vh;
+    }
+</style>
+
+<body>
+    <Header class="Header">
+        <div class="container">
+            <div class="row  cust-margin">
+                <div class="HeaderText col-5">
+                    <h1> Building stellar websites for early startups</h1>
+                    <p class="my-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.quia veniam laboriosam sed,
+                        suscipit ipsa deserunt nisi culpa nobis!</p>
+                    <button class="btn btn-warning custbutt">view your work</button>
+                    <button type="button" class="custlink btn btn-link">view pricing</button>
+                    <img src="images/arrow.png" alt="" srcset="" class="mt-1">
+                </div>
+                <div class="HeaderImage col-6 offset-1 pt-2">
+                    <img src="images/1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </Header>
+    <section class="SwBody">
+        <div class="container">
+            <div class="row">
+                <div class="BodyText col-4">
+                    <h1>How we work</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <button type="button" class="custlinkBody btn btn-link">Get in touch with us</button>
+                    <img src="images/Arrow 2.png" alt="" srcset="" class="mt-1">
+                </div>
+                <div class="BodyCards col-8">
+                    <div class="row">
+                        <div class="item col-6 mb-1">
+                            <img src="images/A1.png" alt="" srcset="">
+                            <h1>Strategy</h1>
+                            <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
+                        </div>
+                        <div class="item col-6 mb-1">
+                            <img src="images/A2.png" alt="" srcset="">
+                            <h1>WireFraming</h1>
+                            <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
+                        </div>
+                        <div class="item col-6">
+                            <img src="images/A3.png" alt="" srcset="">
+                            <h1>Design</h1>
+                            <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
+                        </div>
+                        <div class="item col-6">
+                            <img src="images/A4.png" alt="" srcset="">
+                            <h1>Development</h1>
+                            <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Viewourprojects">
+        <div class="container">
+            <h1>View our projects</h1>
+            <div class="row">
+                <div class="col-7" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
+                    <img src="images/Card.png" class="img-fluid" alt="" srcset="">
+                    <!-- OFF-canvas code -->
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style="font-size: 24px;">
+                                Workhub office Webflow
+                                Webflow Design</h3>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p style="opacity: 0.8;">Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                                aliquam </p>
+                            <span style="margin-right: 2%; color: #FCD980 !important ;">View project</span>
+                            <img src="images/arrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 offset-1">
+                    <div class="row">
+                        <div class="col-12 cont-frame-parent pb-4" onmouseover="showcontFrame()"
+                            onmouseleave="hidecontFrame()">
+                            <img src="images/Side1.png" class="img-fluid" alt="" srcset="">
+                            <div class="cont-frame">
+                                <h2>Unisaas Website Design</h2>
+                                <span style="margin-right: 2%; color: #FCD980 !important ;">View project</span>
+                                <img src="images/arrow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <img src="images/Side2.png" class="img-fluid" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ourClient">
+        <div class="container">
+            <div class="row">
+                <div class="ourclienttext col-4">
+                    <h1>What our clients say about us</h1>
+                    <p style="color: #282938; opacity: 0.8;">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        sed.</p>
+                </div>
+                <div id="feeds" class="carousel slide col-8">
+                    <div class="carousel-inner" data-bs-ride="carousel">
+                        <div class="carousel-item active">
+                            <h2 style="font-size: 30px;">
+                                "The best agency we’ve worked with so far.
+                                They understand our product and are able to add new features with a great focus."
+                            </h2>
+                            <div class="imgContainer mt-3 ">
+                                <img class="rounded-circle me-2" src="images/person1.jpg" alt=""
+                                    style="width: 15% !important; height:12vh !important ;">
+                                <div style="display: inline-block;">
+                                    <p style="font-size: 18px;">Jenny Wilson </p>
+                                    <p> Vice President</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <h2 style="font-size: 30px;">
+                                "The best agency we’ve worked with so far.
+                                They understand our product and are able to add new features with a great focus."
+                            </h2>
+                            <div class="imgContainer mt-3 ">
+                                <img class="rounded-circle me-2" src="images/person2.jpg" alt=""
+                                    style="width: 15% !important; height:12vh !important ;">
+                                <div style="display: inline-block;">
+                                    <p style="font-size: 18px;">Jenny Wilson </p>
+                                    <p> Vice President</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <h2 style="font-size: 30px;">
+                                "The best agency we’ve worked with so far.
+                                They understand our product and are able to add new features with a great focus."
+                            </h2>
+                            <div class="imgContainer mt-3 ">
+                                <img class="rounded-circle me-2" src="images/person3.jpg" alt=""
+                                    style="width: 15% !important; height:12vh !important ;">
+                                <div style="display: inline-block;">
+                                    <p style="font-size: 18px;">Jenny Wilson </p>
+                                    <p> Vice President</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="FAQ">
+        <div class="container">
+            <div class="row">
+                <div class="ourclienttext col-4 mt-5">
+                    <h1>Frequently asked questions</h1>
+                    <p style="color: #2405F2; opacity: 0.87;">Contact us for more info</p>
+                </div>
+                <div class="FAQ col-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    <h1 style="float: left; color: #2405F2;">01</h1>
+                                    <h1 style="float: left; margin-top: 2vh; margin-left:2%; font-size: 26px;">How much
+                                        time does it take?</h1>
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti!</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div class="accordion-button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsetwo">
+                                        <h1 style="float: left; color: #2405F2;">02</h1>
+                                        <h1 style="float: left; margin-top: 2vh; margin-left:2%; font-size: 26px;">What
+                                            is your class naming convention?</h1>
+                                    </div>
+                                </div>
+                                <div id="collapsetwo" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti!</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <div class="accordion-button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapsethree">
+                                            <h1 style="float: left; color: #2405F2;">03</h1>
+                                            <h1 style="float: left; margin-top: 2vh; margin-left:2%; font-size: 26px;">
+                                                How do you communicate?</h1>
+                                        </div>
+                                    </div>
+                                    <div id="collapsethree" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <div class="accordion-button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapsefour">
+                                            <h1 style="float: left; color: #2405F2;">04</h1>
+                                            <h1 style="float: left; margin-top: 2vh; margin-left:2%; font-size: 26px;">I
+                                                have a bigger project. Can you handle it?</h1>
+                                        </div>
+                                    </div>
+                                    <div id="collapsefour" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <div class="accordion-button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapsefive">
+                                            <h1 style="float: left; color: #2405F2;">05</h1>
+                                            <h1 style="float: left; margin-top: 2vh; margin-left:2%; font-size: 26px;">
+                                                What is your class naming convention?</h1>
+                                        </div>
+                                    </div>
+                                    <div id="collapsefive" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+</body>
+<script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var contframe = document.getElementsByClassName("cont-frame")[0]
+    function showcontFrame() {
+        contframe.style.display = "block"
+    }
+    function hidecontFrame() {
+        contframe.style.display = "none"
+    }
+</script>
+
+</html>
